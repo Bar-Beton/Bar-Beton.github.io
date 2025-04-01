@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beton</title>
+    <style>
+        /* Основные стили */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        header {
+            text-align: center;
+            padding: 30px 0;
+            background-color: #fff;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            margin-bottom: 30px;
+        }
+        
+        h1 {
+            color: #d9534f;
+            margin: 0;
+            font-size: 2.5em;
+        }
+        
+        .description {
+            color: #666;
+            margin-top: 10px;
+        }
+        
+        /* Стили для PDF-просмотрщика */
+        .pdf-container {
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+            overflow: hidden;
+            margin-bottom: 30px;
+        }
+        
+        .pdf-viewer {
+            width: 100%;
+            height: 800px;
+            border: none;
+        }
+        
+        /* Футер */
+        footer {
+            text-align: center;
+            padding: 20px;
+            color: #777;
+            font-size: 0.9em;
+        }
+        
+        /* Адаптивность */
+        @media (max-width: 768px) {
+            .pdf-viewer {
+                height: 500px;
+            }
+            
+            h1 {
+                font-size: 2em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Menu</h1>
+            <p class="description">Отсканируйте QR-код для просмотра актуального меню</p>
+        </div>
+    </header>
+    
+    <div class="container">
+        <div class="pdf-container">
+            <!-- ЗАМЕНИТЕ ССЫЛКУ НА СВОЙ PDF (Google Drive или другой хостинг) -->
+            <iframe 
+                class="pdf-viewer" 
+                src="https://drive.google.com/file/d/1E0rd5uoCNAZCbq_Qyt-ajeY6-Hx5tzwh/view?usp=drive_link/preview" 
+                allow="autoplay">
+            </iframe>
+        </div>
+    </div>
+    
+    <footer>
+        <div class="container">
+            <p>© 2025 Beton | <a href="tel:+74822453969">+7 (482) 245-39-69</a></p>
+        </div>
+    </footer>
+</body>
+</html>
